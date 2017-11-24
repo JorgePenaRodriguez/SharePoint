@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bSide.NMP.RYDEL", "bSide.NMP.RYDEL\bSide.NMP.RYDEL.csproj", "{B0854C58-23E5-45B5-BBB1-99A2C0D0493B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{08F34088-6051-4BF4-8397-6DF032F34157} = {08F34088-6051-4BF4-8397-6DF032F34157}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bSide.NMP.RYDEL.modelView", "bside.NMP.RYDEL.modelView\bSide.NMP.RYDEL.modelView.csproj", "{08F34088-6051-4BF4-8397-6DF032F34157}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0854C58-23E5-45B5-BBB1-99A2C0D0493B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0854C58-23E5-45B5-BBB1-99A2C0D0493B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0854C58-23E5-45B5-BBB1-99A2C0D0493B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B0854C58-23E5-45B5-BBB1-99A2C0D0493B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0854C58-23E5-45B5-BBB1-99A2C0D0493B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0854C58-23E5-45B5-BBB1-99A2C0D0493B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{08F34088-6051-4BF4-8397-6DF032F34157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08F34088-6051-4BF4-8397-6DF032F34157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08F34088-6051-4BF4-8397-6DF032F34157}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{08F34088-6051-4BF4-8397-6DF032F34157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08F34088-6051-4BF4-8397-6DF032F34157}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

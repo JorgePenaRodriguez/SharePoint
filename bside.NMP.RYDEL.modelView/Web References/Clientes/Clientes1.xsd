@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:NMPCampania="http://servicios.montedepiedad.com.mx/NMP/Schema/Tipos/Campania" xmlns:NMPComun="http://servicios.montedepiedad.com.mx/NMP/Schema/Tipos/Comun" elementFormDefault="qualified" targetNamespace="http://servicios.montedepiedad.com.mx/NMP/Schema/Tipos/Campania" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="http://10.30.3.15:8011/NMP/CRM/Clientes?SCHEMA%2FCommon%2FXSD%2FNMPComun_TIPOS" namespace="http://servicios.montedepiedad.com.mx/NMP/Schema/Tipos/Comun" />
+  <xsd:complexType name="CampaniaType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="idCampania" type="xsd:string" />
+      <xsd:element minOccurs="0" name="nombre" type="xsd:string" />
+      <xsd:element minOccurs="0" name="descripcion" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ramo" type="xsd:string" />
+      <xsd:element minOccurs="0" name="subRamo" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="CampaniaListType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="Campania" type="NMPCampania:CampaniaType" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

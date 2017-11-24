@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://10.30.2.38:8012/NMP/CRM/Clientes?SCHEMA%2FCRMFaseI%2FClientesService%2FResources%2FXSD%2FClientesSvcXSD" filename="Clientes.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://10.30.2.38:8012/NMP/CRM/Clientes?SCHEMA%2FCommon%2FXSD%2FNMPStandardMessage" filename="Clientes0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://10.30.2.38:8012/NMP/CRM/Clientes?SCHEMA%2FCRMFaseI%2FClientesService%2FResources%2FXSD%2FClienteUpdateXSD" filename="Clientes1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="https://10.30.2.38:8012/NMP/CRM/Clientes?wsdl" filename="Clientes.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://10.30.2.38:8012/NMP/CRM/Clientes?SCHEMA%2FCommon%2FXSD%2FNMPStandardHeader" filename="Clientes2.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

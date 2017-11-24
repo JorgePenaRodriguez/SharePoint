@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WL5G3N0:definitions xmlns:WL5G3N3="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPStandardMessage" xmlns:WL5G3N5="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:WL5G3N1="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPStandardHeader" xmlns:WL5G3N2="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPCliente" xmlns:WL5G3N4="http://servicios.montedepiedad.com.mx/NMP/Services/Clientes" name="Clientes" targetNamespace="http://servicios.montedepiedad.com.mx/NMP/Services/Clientes" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/">
+  <WL5G3N0:types>
+    <xsd:schema xmlns:NMPsm="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPStandardMessage" xmlns:inpl2="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPCliente" xmlns:tns="http://servicios.montedepiedad.com.mx/NMP/Services/Clientes" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:NMPsh="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPStandardHeader" xmlns:inp1="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPCliente" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import schemaLocation="https://10.30.2.38:8012/NMP/CRM/Clientes?SCHEMA%2FCRMFaseI%2FClientesService%2FResources%2FXSD%2FClientesSvcXSD" namespace="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPCliente" />
+      <xsd:import schemaLocation="https://10.30.2.38:8012/NMP/CRM/Clientes?SCHEMA%2FCRMFaseI%2FClientesService%2FResources%2FXSD%2FClienteUpdateXSD" namespace="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPCliente" />
+      <xsd:import schemaLocation="https://10.30.2.38:8012/NMP/CRM/Clientes?SCHEMA%2FCommon%2FXSD%2FNMPStandardMessage" namespace="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPStandardMessage" />
+      <xsd:import schemaLocation="https://10.30.2.38:8012/NMP/CRM/Clientes?SCHEMA%2FCommon%2FXSD%2FNMPStandardHeader" namespace="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPStandardHeader" />
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="NMPHeaderRequest">
+    <WL5G3N0:part name="requestHeader" element="WL5G3N1:headerMessage" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getClientesByIDrequestMessage">
+    <WL5G3N0:part name="getClientesByIDRequest" element="WL5G3N2:getClientesByIDRequest" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getClientesByIDresponseMessage">
+    <WL5G3N0:part name="getClientesByIDResponse" element="WL5G3N2:getClientesByIDResponse" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getClientesByNumCredencialrequestMessage">
+    <WL5G3N0:part name="getClientesByNumCredencialRequest" element="WL5G3N2:getClientesByNumCredencialRequest" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getClientesByNumCredencialresponseMessage">
+    <WL5G3N0:part name="getClientesByNumCredencialResponse" element="WL5G3N2:getClientesByNumCredencialResponse" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="listClientesrequestMessage">
+    <WL5G3N0:part name="listClientesRequest" element="WL5G3N2:listClientesRequest" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="listClientesresponseMessage">
+    <WL5G3N0:part name="listClientesResponse" element="WL5G3N2:listClientesResponse" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="countClientesrequestMessage">
+    <WL5G3N0:part name="countClientesRequest" element="WL5G3N2:countClientesRequest" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="countClientesresponseMessage">
+    <WL5G3N0:part name="countClientesResponse" element="WL5G3N2:countClientesResponse" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getHuellaClienterequestMessage">
+    <WL5G3N0:part name="getHuellaClienteRequest" element="WL5G3N2:getHuellaClienteRequest" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getHuellaClienteresponseMessage">
+    <WL5G3N0:part name="getHuellaClienteResponse" element="WL5G3N2:getHuellaClienteResponse" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="updateClienteRequestMessage">
+    <WL5G3N0:part name="updateClienteRequest" element="WL5G3N2:updateClienteRequest" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="updateClienteResponseMessage">
+    <WL5G3N0:part name="updateClienteResponse" element="WL5G3N2:updateClienteResponse" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validarClienteRequestMessage">
+    <WL5G3N0:part name="part" element="WL5G3N2:validarClienteRequest" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validarClienteResponseMessage">
+    <WL5G3N0:part name="part" element="WL5G3N2:validarClienteResponse" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="insertClienteRequestMessage">
+    <WL5G3N0:part name="insertClienteRequest" element="WL5G3N2:insertClienteRequest" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="insertClienteResponseMessage">
+    <WL5G3N0:part name="insertClienteResponse" element="WL5G3N2:insertClienteResponse" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="clientesFaultMessage">
+    <WL5G3N0:part name="clientesFault" element="WL5G3N3:messageError" />
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="Clientes_ptt">
+    <WL5G3N0:operation name="getClientesByID">
+      <WL5G3N0:input message="WL5G3N4:getClientesByIDrequestMessage" />
+      <WL5G3N0:output message="WL5G3N4:getClientesByIDresponseMessage" />
+      <WL5G3N0:fault name="Fault" message="WL5G3N4:clientesFaultMessage" />
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getClientesByNumCredencial">
+      <WL5G3N0:input message="WL5G3N4:getClientesByNumCredencialrequestMessage" />
+      <WL5G3N0:output message="WL5G3N4:getClientesByNumCredencialresponseMessage" />
+      <WL5G3N0:fault name="Fault" message="WL5G3N4:clientesFaultMessage" />
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="listClientes">
+      <WL5G3N0:input message="WL5G3N4:listClientesrequestMessage" />
+      <WL5G3N0:output message="WL5G3N4:listClientesresponseMessage" />
+      <WL5G3N0:fault name="Fault" message="WL5G3N4:clientesFaultMessage" />
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="countClientes">
+      <WL5G3N0:input message="WL5G3N4:countClientesrequestMessage" />
+      <WL5G3N0:output message="WL5G3N4:countClientesresponseMessage" />
+      <WL5G3N0:fault name="Fault" message="WL5G3N4:clientesFaultMessage" />
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getHuellaCliente">
+      <WL5G3N0:input message="WL5G3N4:getHuellaClienterequestMessage" />
+      <WL5G3N0:output message="WL5G3N4:getHuellaClienteresponseMessage" />
+      <WL5G3N0:fault name="Fault" message="WL5G3N4:clientesFaultMessage" />
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="updateCliente">
+      <WL5G3N0:input message="WL5G3N4:updateClienteRequestMessage" />
+      <WL5G3N0:output message="WL5G3N4:updateClienteResponseMessage" />
+      <WL5G3N0:fault name="Fault" message="WL5G3N4:clientesFaultMessage" />
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="validarCliente">
+      <WL5G3N0:input message="WL5G3N4:validarClienteRequestMessage" />
+      <WL5G3N0:output message="WL5G3N4:validarClienteResponseMessage" />
+      <WL5G3N0:fault name="Fault" message="WL5G3N4:clientesFaultMessage" />
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="insertCliente">
+      <WL5G3N0:input message="WL5G3N4:insertClienteRequestMessage" />
+      <WL5G3N0:output message="WL5G3N4:insertClienteResponseMessage" />
+      <WL5G3N0:fault name="Fault" message="WL5G3N4:clientesFaultMessage" />
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="ClientesBinding" type="WL5G3N4:Clientes_ptt">
+    <WL5G3N5:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <WL5G3N0:operation name="getClientesByID">
+      <WL5G3N5:operation soapAction="getClientesByID" style="document" />
+      <WL5G3N0:input>
+        <WL5G3N5:body use="literal" />
+        <WL5G3N5:header message="WL5G3N4:NMPHeaderRequest" part="requestHeader" use="literal" />
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N5:body use="literal" />
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N5:fault use="literal" name="Fault" namespace="" />
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getClientesByNumCredencial">
+      <WL5G3N5:operation soapAction="getClientesByNumCredencial" style="document" />
+      <WL5G3N0:input>
+        <WL5G3N5:body use="literal" />
+        <WL5G3N5:header message="WL5G3N4:NMPHeaderRequest" part="requestHeader" use="literal" />
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N5:body use="literal" />
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N5:fault use="literal" name="Fault" namespace="" />
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="listClientes">
+      <WL5G3N5:operation soapAction="listClientes" style="document" />
+      <WL5G3N0:input>
+        <WL5G3N5:body use="literal" />
+        <WL5G3N5:header message="WL5G3N4:NMPHeaderRequest" part="requestHeader" use="literal" />
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N5:body use="literal" />
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N5:fault use="literal" name="Fault" namespace="" />
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="countClientes">
+      <WL5G3N5:operation soapAction="countClientes" style="document" />
+      <WL5G3N0:input>
+        <WL5G3N5:body use="literal" />
+        <WL5G3N5:header message="WL5G3N4:NMPHeaderRequest" part="requestHeader" use="literal" />
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N5:body use="literal" />
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N5:fault use="literal" name="Fault" namespace="" />
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getHuellaCliente">
+      <WL5G3N5:operation soapAction="getHuellaCliente" style="document" />
+      <WL5G3N0:input>
+        <WL5G3N5:body use="literal" />
+        <WL5G3N5:header message="WL5G3N4:NMPHeaderRequest" part="requestHeader" use="literal" />
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N5:body use="literal" />
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N5:fault use="literal" name="Fault" namespace="" />
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="updateCliente">
+      <WL5G3N5:operation soapAction="updateCliente" style="document" />
+      <WL5G3N0:input>
+        <WL5G3N5:body use="literal" />
+        <WL5G3N5:header message="WL5G3N4:NMPHeaderRequest" part="requestHeader" use="literal" />
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N5:body use="literal" />
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N5:fault use="literal" name="Fault" namespace="" />
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="validarCliente">
+      <WL5G3N5:operation soapAction="http://servicios.montedepiedad.com.mx/NMP/Services/Clientes/validarCliente" style="document" />
+      <WL5G3N0:input>
+        <WL5G3N5:body use="literal" parts="part" />
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N5:body use="literal" parts="part" />
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault">
+        <WL5G3N5:fault use="literal" name="Fault" namespace="" />
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="insertCliente">
+      <WL5G3N5:operation soapAction="insertCliente" style="document" />
+      <WL5G3N0:input>
+        <WL5G3N5:body use="literal" />
+        <WL5G3N5:header message="WL5G3N4:NMPHeaderRequest" part="requestHeader" use="literal" />
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N5:body use="literal" />
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="Fault" />
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="Clientes">
+    <WL5G3N0:documentation>OSB Service</WL5G3N0:documentation>
+    <WL5G3N0:port name="ClientesPort" binding="WL5G3N4:ClientesBinding">
+      <WL5G3N5:address location="https://10.30.2.38:8012/NMP/CRM/Clientes" />
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

@@ -1,0 +1,6 @@
+C:\Dev\NMP\bSide.NMP\bside.NMP.RYDEL.modelView\bin\Debug\RYDEL.modelView.dll.config
+C:\Dev\NMP\bSide.NMP\bside.NMP.RYDEL.modelView\bin\Debug\RYDEL.modelView.dll
+C:\Dev\NMP\bSide.NMP\bside.NMP.RYDEL.modelView\bin\Debug\RYDEL.modelView.pdb
+C:\Dev\NMP\bSide.NMP\bside.NMP.RYDEL.modelView\obj\Debug\RYDEL.modelView.dll
+C:\Dev\NMP\bSide.NMP\bside.NMP.RYDEL.modelView\obj\Debug\RYDEL.modelView.pdb
+C:\Dev\NMP\bSide.NMP\bside.NMP.RYDEL.modelView\obj\Debug\bSide.NMP.RYDEL.modelView.csprojResolveAssemblyReference.cache

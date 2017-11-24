@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B0854C58-23E5-45B5-BBB1-99A2C0D0493B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>bSide.NMP.RYDEL</RootNamespace>
+    <AssemblyName>bSide.NMP.RYDEL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\Extensions.cs" />
+    <Compile Include="App_Code\PagoBanamex\ApiOperation.cs" />
+    <Compile Include="App_Code\PagoBanamex\Connection.cs" />
+    <Compile Include="App_Code\Constantes.cs" />
+    <Compile Include="App_Code\PagoBanamex\Merchant.cs" />
+    <Compile Include="App_Code\RydelLog.cs" />
+    <Compile Include="App_Code\Services.cs" />
+    <Compile Include="App_Code\SharePointDA.cs" />
+    <Compile Include="App_Code\Utils.cs" />
+    <Compile Include="Layouts\RYDEL\ConsultaDatosRyD.aspx.cs">
+      <DependentUpon>ConsultaDatosRyD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\RYDEL\ConsultaDatosRyD.aspx.designer.cs">
+      <DependentUpon>ConsultaDatosRyD.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\RYDEL\ConsultaEmpenio.aspx.cs">
+      <DependentUpon>ConsultaEmpenio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\RYDEL\ConsultaEmpenio.aspx.designer.cs">
+      <DependentUpon>ConsultaEmpenio.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\RYDEL\Process.aspx.cs">
+      <DependentUpon>Process.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\RYDEL\Process.aspx.designer.cs">
+      <DependentUpon>Process.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\RYDEL\Receipt.aspx.cs">
+      <DependentUpon>Receipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\RYDEL\Receipt.aspx.designer.cs">
+      <DependentUpon>Receipt.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\RYDEL\ReceiptDebug.aspx.cs">
+      <DependentUpon>ReceiptDebug.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\RYDEL\ReceiptDebug.aspx.designer.cs">
+      <DependentUpon>ReceiptDebug.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebParts\HorarioOperacion\HorarioOperacion.cs" />
+    <Compile Include="WebParts\HorarioOperacion\HorarioOperacionUserControl.ascx.cs">
+      <DependentUpon>HorarioOperacionUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\HorarioOperacion\HorarioOperacionUserControl.ascx.designer.cs">
+      <DependentUpon>HorarioOperacionUserControl.ascx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\Feature Webparts\Feature Webparts.feature">
+      <FeatureId>{4651b643-b7de-4616-b311-5d320f5ebc81}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{378011c6-3df6-484b-8ece-53715d701811}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{fbad924a-89da-4306-99a6-75736e0f9707}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="WebParts\HorarioOperacion\HorarioOperacion.webpart" />
+    <None Include="WebParts\HorarioOperacion\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a90d18f8-57f8-4f60-a4e3-281638ecb308}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature Webparts\Feature Webparts.Template.xml">
+      <DependentUpon>Feature Webparts.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\RYDEL\ConsultaDatosRyD.aspx" />
+    <Content Include="Layouts\RYDEL\ConsultaEmpenio.aspx" />
+    <Content Include="Layouts\RYDEL\Images\ajax-loader.gif" />
+    <Content Include="Layouts\RYDEL\Images\bannerNoContrato.png" />
+    <Content Include="Layouts\RYDEL\Images\btn_reloadNMP.png" />
+    <Content Include="Layouts\RYDEL\Images\cuestion.png" />
+    <Content Include="Layouts\RYDEL\Process.aspx" />
+    <Content Include="Layouts\RYDEL\Receipt.aspx" />
+    <Content Include="Layouts\RYDEL\ReceiptDebug.aspx" />
+    <Content Include="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\external\jquery\jquery.js" />
+    <Content Include="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\images\ui-bg_diagonals-thick_75_f3d8d8_40x40.png" />
+    <Content Include="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\images\ui-bg_glass_55_fbf8ee_1x400.png" />
+    <Content Include="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\images\ui-bg_highlight-hard_0_bd2d4c_1x100.png" />
+    <Content Include="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\images\ui-bg_highlight-soft_15_bd2d4c_1x100.png" />
+    <Content Include="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\images\ui-bg_highlight-soft_80_bd2d4c_1x100.png" />
+    <Content Include="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\images\ui-icons_8b2231_256x240.png" />
+    <Content Include="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\images\ui-icons_bd2d4c_256x240.png" />
+    <Content Include="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\index.html" />
+    <Content Include="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\jquery-ui.css" />
+    <Content Include="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\jquery-ui.js" />
+    <Content Include="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\jquery-ui.min.css" />
+    <Content Include="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\jquery-ui.min.js" />
+    <Content Include="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\jquery-ui.structure.css" />
+    <Content Include="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\jquery-ui.structure.min.css" />
+    <Content Include="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\jquery-ui.theme.css" />
+    <Content Include="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\jquery-ui.theme.min.css" />
+    <Content Include="WebParts\HorarioOperacion\Elements.xml" />
+    <Content Include="WebParts\HorarioOperacion\HorarioOperacionUserControl.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bside.NMP.RYDEL.modelView\bSide.NMP.RYDEL.modelView.csproj">
+      <Project>{08f34088-6051-4bf4-8397-6df032f34157}</Project>
+      <Name>bSide.NMP.RYDEL.modelView</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

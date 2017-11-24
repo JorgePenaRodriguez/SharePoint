@@ -1,0 +1,5 @@
+C:\Dev\NMP\bSide.NMP\bSide.NMP.RYDEL\bin\Debug\bSide.NMP.RYDEL.dll
+C:\Dev\NMP\bSide.NMP\bSide.NMP.RYDEL\bin\Debug\bSide.NMP.RYDEL.pdb
+C:\Dev\NMP\bSide.NMP\bSide.NMP.RYDEL\obj\Debug\bSide.NMP.RYDEL.csprojResolveAssemblyReference.cache
+C:\Dev\NMP\bSide.NMP\bSide.NMP.RYDEL\obj\Debug\bSide.NMP.RYDEL.dll
+C:\Dev\NMP\bSide.NMP\bSide.NMP.RYDEL\obj\Debug\bSide.NMP.RYDEL.pdb

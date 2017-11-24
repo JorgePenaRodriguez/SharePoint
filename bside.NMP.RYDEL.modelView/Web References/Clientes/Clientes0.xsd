@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPStandardHeader" xmlns:NMPsh="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPStandardHeader" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPStandardHeader" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="headerMessage" type="NMPsh:HeaderMessage" />
+  <xs:element name="headerMessageResponse" type="NMPsh:HeaderMessageResponse" />
+  <xs:complexType name="HeaderMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombreUsuario" type="xs:string" />
+      <xs:element minOccurs="0" name="idSucursal" type="xs:string" />
+      <xs:element minOccurs="1" name="usuario" type="xs:string" />
+      <xs:element minOccurs="1" name="idConsumidor" type="xs:string" />
+      <xs:element minOccurs="1" name="idDestino" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="HeaderMessageResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="NMPsh:HeaderMessage">
+        <xs:sequence>
+          <xs:element name="codigoRespuesta" type="xs:int" />
+          <xs:element name="descripcionRespuesta" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>

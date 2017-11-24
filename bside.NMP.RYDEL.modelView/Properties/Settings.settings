@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RYDEL.modelView.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="modelView_AdminPagos_AdminPagos" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://dcpsoadev1n1.nmp.com.mx:8011/NMP/MIDAS/AdminPagos</Value>
+    </Setting>
+    <Setting Name="modelView_Clientes_Clientes" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.30.3.15:8011/NMP/CRM/Clientes</Value>
+    </Setting>
+    <Setting Name="RYDEL_modelView_DSRFPagoLinea_DSRFPagoLinea" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.30.2.38:8011/NMP/MIDAS/DSRFPago</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

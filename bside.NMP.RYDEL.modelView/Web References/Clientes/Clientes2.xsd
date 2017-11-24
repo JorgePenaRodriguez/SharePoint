@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:NMPComun="http://servicios.montedepiedad.com.mx/NMP/Schema/Tipos/Comun" elementFormDefault="qualified" targetNamespace="http://servicios.montedepiedad.com.mx/NMP/Schema/Tipos/Comun" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:simpleType name="identificadorType">
+    <xsd:restriction base="xsd:long">
+      <xsd:totalDigits value="20" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="emailType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="100" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="usuarioType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="20" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="banderaEnteroType">
+    <xsd:restriction base="xsd:int">
+      <xsd:enumeration value="1" />
+      <xsd:enumeration value="0" />
+      <xsd:totalDigits value="2" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="decimalType">
+    <xsd:restriction base="xsd:decimal">
+      <xsd:fractionDigits value="7" />
+      <xsd:totalDigits value="15" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="tipoTelefonoType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="15" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="extensionTelefonoType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="5" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="codigoAreaType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="2" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="numeroTelefonicoType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="10" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="codigoPaisType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="2" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="nombreCalleType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="240" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="numeroExteriorType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="5" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="numeroInteriorType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="5" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="estadoType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="20" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="delegacionMunicipioType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="20" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="coloniaType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="30" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="codigoPostalType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="5" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="tipoDomicilioType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="PARTICULAR" />
+      <xsd:enumeration value="OFICINA" />
+      <xsd:enumeration value="FISCAL" />
+      <xsd:maxLength value="10" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="ciudadPoblacionType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="20" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="paisType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="20" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="simpleIntFlagType">
+    <xsd:restriction base="xsd:int">
+      <xsd:enumeration value="1" />
+      <xsd:enumeration value="0" />
+      <xsd:totalDigits value="2" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="ofertaEstadoType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="GENERADA" />
+      <xsd:enumeration value="ACEPTADA" />
+      <xsd:enumeration value="RECHAZADA" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="origenType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="CRM" />
+      <xsd:enumeration value="SAP" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="TelefonoType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="codigoPais" type="NMPComun:codigoPaisType" />
+      <xsd:element minOccurs="0" name="codigoArea" type="NMPComun:codigoAreaType" />
+      <xsd:element minOccurs="0" name="numeroTelefonico" type="NMPComun:numeroTelefonicoType" />
+      <xsd:element minOccurs="0" name="extension" type="NMPComun:extensionTelefonoType" />
+      <xsd:element minOccurs="0" name="tipoTelefono" type="NMPComun:tipoTelefonoType" />
+      <xsd:element minOccurs="0" ref="NMPComun:fechaCreacion" />
+      <xsd:element minOccurs="0" ref="NMPComun:fuenteDato" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="TelefonoListType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="Telefono" type="NMPComun:TelefonoType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="TelefonoListaType">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="unbounded" name="telefono" type="NMPComun:TelefonoType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="DireccionType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="nombreDelaCalle" type="NMPComun:nombreCalleType" />
+      <xsd:element minOccurs="0" name="numeroExterior" type="NMPComun:numeroExteriorType" />
+      <xsd:element minOccurs="0" name="numeroInterior" type="NMPComun:numeroInteriorType" />
+      <xsd:element minOccurs="0" name="estado" type="NMPComun:estadoType" />
+      <xsd:element minOccurs="0" name="delegacionMunicipio" type="NMPComun:delegacionMunicipioType" />
+      <xsd:element minOccurs="0" name="colonia" type="NMPComun:coloniaType" />
+      <xsd:element minOccurs="0" name="codigoPostal" type="NMPComun:codigoPostalType" />
+      <xsd:element minOccurs="0" name="tipoDomicilio" type="NMPComun:tipoDomicilioType" />
+      <xsd:element minOccurs="0" name="ciudadPoblacion" type="NMPComun:ciudadPoblacionType" />
+      <xsd:element minOccurs="0" name="pais" type="NMPComun:paisType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="DireccionClavesType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="tipoDomicilio" type="xsd:int" />
+      <xsd:element minOccurs="0" name="tipoVivienda" type="NMPComun:TipoViviendaType" />
+      <xsd:element minOccurs="0" name="nombreDelaCalle" type="NMPComun:nombreCalleType" />
+      <xsd:element minOccurs="0" name="numeroExterior" type="NMPComun:numeroExteriorType" />
+      <xsd:element minOccurs="0" name="numeroInterior" type="NMPComun:numeroInteriorType" />
+      <xsd:element minOccurs="0" name="entreCalle1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="entreCalle2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="colonia" type="NMPComun:ColoniaType" />
+      <xsd:element minOccurs="0" name="delegacionMunicipio" type="NMPComun:DelegacionMunicipioType" />
+      <xsd:element minOccurs="0" name="estado" type="NMPComun:EstadoType" />
+      <xsd:element minOccurs="0" name="codigoPostal" type="NMPComun:codigoPostalType" />
+      <xsd:element minOccurs="0" name="pais" type="NMPComun:PaisType" />
+      <xsd:element minOccurs="0" name="domicilioExtranjero" type="xsd:string" />
+      <xsd:element minOccurs="0" ref="NMPComun:fechaCreacion" />
+      <xsd:element minOccurs="0" ref="NMPComun:fuenteDato" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="DireccionListType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="Direccion" type="NMPComun:DireccionType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="DireccionListaType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" name="direccion" type="NMPComun:DireccionClavesType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="EmailType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" ref="NMPComun:direccionCorreo" />
+      <xsd:element minOccurs="0" name="tipoCorreo" type="xsd:string" />
+      <xsd:element minOccurs="0" ref="NMPComun:fechaCreacion" />
+      <xsd:element minOccurs="0" ref="NMPComun:fuenteDato" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="EmailListType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="Email" type="NMPComun:EmailType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="EmailListaType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" name="correoElectronico" type="NMPComun:EmailType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="TipoViviendaType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" ref="NMPComun:clave" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="CodigoPostalType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" ref="NMPComun:clave" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="PaisType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" ref="NMPComun:clave" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ColoniaType">
+    <xsd:sequence>
+      <xsd:element ref="NMPComun:descripcion" />
+      <xsd:element maxOccurs="unbounded" ref="NMPComun:clave" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="DelegacionMunicipioType">
+    <xsd:sequence>
+      <xsd:element ref="NMPComun:descripcion" />
+      <xsd:element maxOccurs="unbounded" ref="NMPComun:clave" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="EstadoType">
+    <xsd:sequence>
+      <xsd:element ref="NMPComun:descripcion" />
+      <xsd:element maxOccurs="unbounded" ref="NMPComun:clave" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="direccionCorreo" type="NMPComun:emailType" />
+  <xsd:element name="fechaCreacion" type="xsd:dateTime" />
+  <xsd:element name="fuenteDato" type="xsd:string" />
+  <xsd:element name="descripcion" type="xsd:string" />
+  <xsd:element name="otro" type="xsd:string" />
+  <xsd:element name="clave" type="NMPComun:ClaveType" />
+  <xsd:complexType name="ClaveType">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:string">
+        <xsd:attribute name="origen" type="NMPComun:origenType" use="required" />
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+</xsd:schema>

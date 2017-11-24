@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPtandardMessage" xmlns:NMPsm="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPStandardMessage" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPStandardMessage" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="messageError" type="NMPsm:MessageError" />
+  <xs:complexType name="MessageError">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codigoError" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcionError" type="xs:string" />
+      <xs:element minOccurs="0" name="tipoError" type="xs:string" />
+      <xs:element minOccurs="0" name="severidad" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

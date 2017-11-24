@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{08F34088-6051-4BF4-8397-6DF032F34157}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RYDEL.modelView</RootNamespace>
+    <AssemblyName>RYDEL.modelView</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>bside.NMP.RYDEL.modelView.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Beneficiario.cs" />
+    <Compile Include="certifica.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="consultaAdminPagos.cs" />
+    <Compile Include="consultaClientes.cs" />
+    <Compile Include="consultaDSRFPagoLinea.cs" />
+    <Compile Include="Contacto.cs" />
+    <Compile Include="CorreoElectronico.cs" />
+    <Compile Include="Cotitular.cs" />
+    <Compile Include="Domicilio.cs" />
+    <Compile Include="notificarPagoResponseComprobantePDF.cs" />
+    <Compile Include="OperacionesBancarias.cs" />
+    <Compile Include="OperacionesBancariasDetalleOperacionBancaria.cs" />
+    <Compile Include="OperacionPago.cs" />
+    <Compile Include="PartidaSaldos.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Telefono.cs" />
+    <Compile Include="Web References\AdminPagos\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\Clientes\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\DSRFPagoLinea\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://10.30.2.38:8011/NMP/MIDAS/DSRFPago%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\DSRFPagoLinea\</RelPath>
+      <UpdateFromURL>http://10.30.2.38:8011/NMP/MIDAS/DSRFPago%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>RYDEL_modelView_DSRFPagoLinea_DSRFPagoLinea</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://dcpsoadev1n1.nmp.com.mx:8011/NMP/MIDAS/AdminPagos%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AdminPagos\</RelPath>
+      <UpdateFromURL>http://dcpsoadev1n1.nmp.com.mx:8011/NMP/MIDAS/AdminPagos%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>modelView_AdminPagos_AdminPagos</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.30.3.15:8011/NMP/CRM/Clientes%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Clientes\</RelPath>
+      <UpdateFromURL>http://10.30.3.15:8011/NMP/CRM/Clientes%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>modelView_Clientes_Clientes</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bside.NMP.RYDEL.modelView.snk" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\AdminPagos\AdminPagos.wsdl" />
+    <None Include="Web References\AdminPagos\AdminPagos.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\AdminPagos\AdminPagos0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\AdminPagos\AdminPagos1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\AdminPagos\AdminPagos2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\AdminPagos\AdminPagos3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\AdminPagos\AdminPagos4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\AdminPagos\FileType1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\AdminPagos\PartidaSaldosType1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\AdminPagos\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Clientes\Clientes.wsdl" />
+    <None Include="Web References\Clientes\Clientes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Clientes\Clientes0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Clientes\Clientes1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Clientes\Clientes2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Clientes\Clientes3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Clientes\DetalleRespuestaType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Clientes\getClienteCampaniasResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Clientes\getClientesResponseType1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Clientes\getHuellaClienteResponseType1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Clientes\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Clientes\StandardResponseType1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\DSRFPagoLinea\DSRFPago.wsdl" />
+    <None Include="Web References\DSRFPagoLinea\DSRFPago.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\DSRFPagoLinea\DSRFPago0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\DSRFPagoLinea\DSRFPago1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\DSRFPagoLinea\DSRFPago2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\DSRFPagoLinea\DSRFPago3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\DSRFPagoLinea\DSRFPago4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\DSRFPagoLinea\FileType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\DSRFPagoLinea\PartidaSaldosType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\DSRFPagoLinea\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\DSRFPagoLinea\responseTypeRespuesta.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

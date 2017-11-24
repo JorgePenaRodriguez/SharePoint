@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:NMPFile="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPFileType" xmlns:NMPPartidaSaldos="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPPartidaSaldos" xmlns:NMPOperacionPago="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPOperacionPago" xmlns:NMPDSRFPago="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPDSRFPagoLineaSvc" elementFormDefault="qualified" targetNamespace="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPDSRFPagoLineaSvc" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="http://10.30.2.38:8011/NMP/MIDAS/DSRFPago?SCHEMA%2FOperacionPrendaria%2FPagoEnLinea%2FResources%2FSchemas%2FNMPPartidaSaldoTiposXSD" namespace="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPPartidaSaldos" />
+  <xsd:import schemaLocation="http://10.30.2.38:8011/NMP/MIDAS/DSRFPago?SCHEMA%2FOperacionPrendaria%2FPagoEnLinea%2FResources%2FSchemas%2FNMPOperacionPagoTipoXSD" namespace="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPOperacionPago" />
+  <xsd:import schemaLocation="http://10.30.2.38:8011/NMP/MIDAS/DSRFPago?SCHEMA%2FOperacionPrendaria%2FPagoEnLinea%2FResources%2FSchemas%2FNMPFileTiposXSD" namespace="http://servicios.montedepiedad.com.mx/NMP/Schema/NMPFileType" />
+  <xsd:element name="getPartidaClienteRequest" type="NMPDSRFPago:getPartidaClienteRequestType" />
+  <xsd:element name="getPartidaClienteResponse" type="NMPDSRFPago:getPartidaClienteResponseType" />
+  <xsd:element name="notificarPagoRequest" type="NMPDSRFPago:notificarPagoRequestType" />
+  <xsd:element name="notificarPagoResponse" type="NMPDSRFPago:notificarPagoResponseType" />
+  <xsd:element name="preregistarPagoRequest" type="NMPOperacionPago:preregistroPagosType" />
+  <xsd:element name="preregistarPagoResponse" type="NMPDSRFPago:responseType" />
+  <xsd:complexType name="getPartidaClienteRequestType">
+    <xsd:sequence>
+      <xsd:element name="folioPartida" type="xsd:long" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="getPartidaClienteResponseType">
+    <xsd:sequence>
+      <xsd:element name="respuesta" type="xsd:string" />
+      <xsd:element name="nombre" type="xsd:string" />
+      <xsd:element name="apellidoPaterno" type="xsd:string" />
+      <xsd:element name="apellidoMaterno" type="xsd:string" />
+      <xsd:element name="correoElectronico" type="xsd:string" />
+      <xsd:element name="partidaSaldos" type="NMPPartidaSaldos:PartidaSaldosType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="notificarPagoRequestType">
+    <xsd:sequence>
+      <xsd:element name="aplicarMovimiento" type="NMPOperacionPago:OperacionPagoType" />
+      <xsd:element name="correoElectronico" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="notificarPagoResponseType">
+    <xsd:sequence>
+      <xsd:element name="respuesta" type="xsd:string" />
+      <xsd:element name="comprobantesPDF" type="NMPFile:FileList" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="responseType">
+    <xsd:sequence>
+      <xsd:element name="respuesta">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="codigo" type="xsd:string" />
+            <xsd:element name="mensaje" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

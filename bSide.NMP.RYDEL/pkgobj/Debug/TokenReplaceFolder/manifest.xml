@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="fbad924a-89da-4306-99a6-75736e0f9707" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="RYDEL.modelView.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="bSide.NMP.RYDEL.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="bSide.NMP.RYDEL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=82305f90d379a283" Namespace="bSide.NMP.RYDEL.WebParts.HorarioOperacion" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\bSide.NMP.RYDEL.WebParts\HorarioOperacion\HorarioOperacionUserControl.ascx" />
+    <TemplateFile Location="Layouts\RYDEL\ConsultaDatosRyD.aspx" />
+    <TemplateFile Location="Layouts\RYDEL\ConsultaEmpenio.aspx" />
+    <TemplateFile Location="Layouts\RYDEL\Images\ajax-loader.gif" />
+    <TemplateFile Location="Layouts\RYDEL\Images\bannerNoContrato.png" />
+    <TemplateFile Location="Layouts\RYDEL\Images\btn_reloadNMP.png" />
+    <TemplateFile Location="Layouts\RYDEL\Images\cuestion.png" />
+    <TemplateFile Location="Layouts\RYDEL\Process.aspx" />
+    <TemplateFile Location="Layouts\RYDEL\Receipt.aspx" />
+    <TemplateFile Location="Layouts\RYDEL\ReceiptDebug.aspx" />
+    <TemplateFile Location="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\external\jquery\jquery.js" />
+    <TemplateFile Location="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\images\ui-bg_diagonals-thick_75_f3d8d8_40x40.png" />
+    <TemplateFile Location="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\images\ui-bg_glass_55_fbf8ee_1x400.png" />
+    <TemplateFile Location="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\images\ui-bg_highlight-hard_0_bd2d4c_1x100.png" />
+    <TemplateFile Location="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\images\ui-bg_highlight-soft_15_bd2d4c_1x100.png" />
+    <TemplateFile Location="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\images\ui-bg_highlight-soft_80_bd2d4c_1x100.png" />
+    <TemplateFile Location="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\images\ui-icons_8b2231_256x240.png" />
+    <TemplateFile Location="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\images\ui-icons_bd2d4c_256x240.png" />
+    <TemplateFile Location="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\images\ui-icons_ffffff_256x240.png" />
+    <TemplateFile Location="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\index.html" />
+    <TemplateFile Location="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\jquery-ui.css" />
+    <TemplateFile Location="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\jquery-ui.js" />
+    <TemplateFile Location="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\jquery-ui.min.css" />
+    <TemplateFile Location="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\jquery-ui.min.js" />
+    <TemplateFile Location="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\jquery-ui.structure.css" />
+    <TemplateFile Location="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\jquery-ui.structure.min.css" />
+    <TemplateFile Location="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\jquery-ui.theme.css" />
+    <TemplateFile Location="Layouts\RYDEL\Scripts\jquery-ui-1.11.4\jquery-ui.theme.min.css" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="bSide.NMP.RYDEL_Feature Webparts\Feature.xml" />
+  </FeatureManifests>
+</Solution>

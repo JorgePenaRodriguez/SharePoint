@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://dcpsoadev1n1.nmp.com.mx:8011/NMP/MIDAS/AdminPagos?WSDL" filename="AdminPagos.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dcpsoadev1n1.nmp.com.mx:8011/NMP/MIDAS/AdminPagos?SCHEMA%2FAdminPagos%2FResources%2FXSD%2FFileType" filename="AdminPagos.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dcpsoadev1n1.nmp.com.mx:8011/NMP/MIDAS/AdminPagos?SCHEMA%2FAdminPagos%2FResources%2FXSD%2FAdminPagosSvc" filename="AdminPagos0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dcpsoadev1n1.nmp.com.mx:8011/NMP/MIDAS/AdminPagos?SCHEMA%2FAdminPagos%2FResources%2FXSD%2FOperacionPago" filename="AdminPagos1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dcpsoadev1n1.nmp.com.mx:8011/NMP/MIDAS/AdminPagos?SCHEMA%2FCommon%2FXSD%2FNMPStandardHeader" filename="AdminPagos2.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dcpsoadev1n1.nmp.com.mx:8011/NMP/MIDAS/AdminPagos?SCHEMA%2FAdminPagos%2FResources%2FXSD%2FPartidaSaldo" filename="AdminPagos3.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dcpsoadev1n1.nmp.com.mx:8011/NMP/MIDAS/AdminPagos?SCHEMA%2FCommon%2FXSD%2FNMPStandardMessage" filename="AdminPagos4.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

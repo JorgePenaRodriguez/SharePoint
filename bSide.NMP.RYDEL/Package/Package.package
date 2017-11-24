@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="fbad924a-89da-4306-99a6-75736e0f9707" solutionId="fbad924a-89da-4306-99a6-75736e0f9707" resetWebServer="false" sharePointProductVersion="15.0" name="bSide.NMP.RYDEL" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="RYDEL.modelView.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\bside.NMP.RYDEL.modelView\bSide.NMP.RYDEL.modelView.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="4651b643-b7de-4616-b311-5d320f5ebc81" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="378011c6-3df6-484b-8ece-53715d701811" />
+  </projectItems>
+</package>

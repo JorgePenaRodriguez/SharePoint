@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="Feature que activa las web parts de refrendo y desempeño" Id="2930abc0-a56f-410c-a220-2d1da5b96a7e" Scope="Site" Title="bSide.NMP.RYDEL Feature WebParts">
+  <ElementManifests>
+    <ElementManifest Location="HorarioOperacion\Elements.xml" />
+    <ElementFile Location="HorarioOperacion\HorarioOperacion.webpart" />
+  </ElementManifests>
+</Feature>
